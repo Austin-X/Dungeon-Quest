@@ -82,8 +82,6 @@ public class MainMenu extends JFrame implements ActionListener {
 	 * pre: none
 	 * post: A MainMenu object created. 
 	 */
-	// I had a lot of help on this main menu from powerpoints 1-3 of Mr. Anthony
-	// The reason why it throws IOException is in case the program does not find the files needed for my images
 	public MainMenu(JPanel canvas) throws IOException {
 		// Setting the title of the frame to "Main Menu"
 		super("Main Menu");
@@ -92,21 +90,21 @@ public class MainMenu extends JFrame implements ActionListener {
 		mainMenuSound();
 		
 		// Adding the mainMenuCanvas as its container
-    	add(canvas);
+    		add(canvas);
     	
-    	// Setting the properties of the Frame
-        setSize(1200, 820);
-        setVisible(true);
-        setLocationRelativeTo(null);
-        setResizable(false);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    		// Setting the properties of the Frame
+        	setSize(1200, 820);
+        	setVisible(true);
+        	setLocationRelativeTo(null);
+        	setResizable(false);
+        	setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-        // Play Button
-        // For the icon image in my image, I had help from: https://www.youtube.com/watch?v=rBYcwTYr4As
+        	// Play Button
+        	// For the icon image in my image, I had help from: https://www.youtube.com/watch?v=rBYcwTYr4As
 		playIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/playButton.png")));
 		playButton = new JButton(playIcon);
 		
-	    playButton.setSize(260, 70);
+	        playButton.setSize(260, 70);
 		playButton.setLocation(460, 580);
 			
 		// Setting the background color of the play button transparent
@@ -149,10 +147,10 @@ public class MainMenu extends JFrame implements ActionListener {
 	 * pre: none
 	 * post: Canvas and buttons have been added to the frame
 	 */
-    public void paint(Graphics g) {
-    	super.paintComponents(g);
-    	repaint();
-    }
+    	public void paint(Graphics g) {
+    		super.paintComponents(g);
+    		repaint();
+    	}
 	
 	/**
 	 * Decides what frame to show based on which button was pressed, or to quit the program if the user pressed the quit button
