@@ -3,16 +3,16 @@ package maze;
 // MazeModel Class
 public class MazeModel {
 	
-	// Declaration of variables
+    // Declaration of variables
     private static char PASSAGE = ' ';
     private static char WALL = '#';
     private static char[][] maze;
     
-	/**
-	 * constructor
-	 * pre: none
-	 * post: A MazeModel object created.
-	 */
+    /**
+      * constructor
+      * pre: none
+      * post: A MazeModel object created.
+      */
     public MazeModel(int rowCells, int colCells) {
         
         // Total maze size will be 2 times the amount of units needed to reach up to the middle line, plus 1 because it is including the middle line
