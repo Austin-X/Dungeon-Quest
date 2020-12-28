@@ -56,38 +56,38 @@ public class DifficultyMode extends JFrame implements ActionListener {
 		setSize(1200, 800);
 		setVisible(false);
 		setLocationRelativeTo(null);
-        setResizable(false);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        	setResizable(false);
+        	setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         
-        // Easy Button
-        easyIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/easyButton.png")));
-        easyButton = new JButton(easyIcon);
-        easyButton.setSize(220, 100);
-        easyButton.setLocation(20, 350);
-        easyButton.setOpaque(false);
+        	// Easy Button
+        	easyIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/easyButton.png")));
+        	easyButton = new JButton(easyIcon);
+        	easyButton.setSize(220, 100);
+        	easyButton.setLocation(20, 350);
+        	easyButton.setOpaque(false);
 		easyButton.setContentAreaFilled(false);
 		easyButton.setBorderPainted(false);
         
 		// Medium Button
-	    mediumIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/mediumButton.png")));
-        mediumButton = new JButton(mediumIcon);
-        mediumButton.setSize(300, 100);
-        mediumButton.setLocation(435, 350);
-        mediumButton.setOpaque(false);
-        mediumButton.setContentAreaFilled(false);
-        mediumButton.setBorderPainted(false);
+	        mediumIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/mediumButton.png")));
+        	mediumButton = new JButton(mediumIcon);
+        	mediumButton.setSize(300, 100);
+        	mediumButton.setLocation(435, 350);
+        	mediumButton.setOpaque(false);
+        	mediumButton.setContentAreaFilled(false);
+        	mediumButton.setBorderPainted(false);
 		
-        // Hard Button
-        hardIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/hardButton.png")));
-        hardButton = new JButton(hardIcon);
-        hardButton.setSize(300, 100);
-        hardButton.setLocation(890, 350);
-        hardButton.setOpaque(false);
-        hardButton.setContentAreaFilled(false);
-        hardButton.setBorderPainted(false);
+        	// Hard Button
+        	hardIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/hardButton.png")));
+        	hardButton = new JButton(hardIcon);
+        	hardButton.setSize(300, 100);
+        	hardButton.setLocation(890, 350);
+        	hardButton.setOpaque(false);
+        	hardButton.setContentAreaFilled(false);
+        	hardButton.setBorderPainted(false);
         
-        // Main Menu Button
-        mainMenuIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/mainMenuButton.png")));
+        	// Main Menu Button
+        	mainMenuIcon = new ImageIcon(ImageIO.read(this.getClass().getResource("/mainMenuButton.png")));
 		mainMenuButton = new JButton(mainMenuIcon);
 		mainMenuButton.setSize(170, 70);
 		mainMenuButton.setLocation(510, 690);
@@ -95,17 +95,17 @@ public class DifficultyMode extends JFrame implements ActionListener {
 		mainMenuButton.setContentAreaFilled(false);
 		mainMenuButton.setBorderPainted(false);
 		
-        // Adding the action listeners
-        easyButton.addActionListener(this);
-        mediumButton.addActionListener(this);
-        hardButton.addActionListener(this);
-        mainMenuButton.addActionListener(this);
+        	// Adding the action listeners
+        	easyButton.addActionListener(this);
+        	mediumButton.addActionListener(this);
+        	hardButton.addActionListener(this);
+        	mainMenuButton.addActionListener(this);
 		
-        // Adding the buttons to my DifficultyModeCanvas container
-        canvas.add(easyButton);
-        canvas.add(mediumButton);
-        canvas.add(hardButton);
-        canvas.add(mainMenuButton);
+        	// Adding the buttons to my DifficultyModeCanvas container
+        	canvas.add(easyButton);
+        	canvas.add(mediumButton);
+        	canvas.add(hardButton);
+        	canvas.add(mainMenuButton);
 	}
 	
 	/**
