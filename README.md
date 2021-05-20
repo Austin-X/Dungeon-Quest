@@ -11,4 +11,4 @@ In this video game, your goal is to escape a randomly generated maze with mobs s
 There are further instructions about the game in the instructions menu of the game.
 There are 3 different difficulty modes that you can play this game in, which are: Easy, Medium, and Hard.
 If you have successfully reached the finish of this randomly generated maze, the time that it took to complete it will be displayed.
-Try to obtain the fastest time to complete the maze in each difficulty mode to earn bragging rights!
+Try to obtain the fastest time to complete the maze in each difficulty mode.
