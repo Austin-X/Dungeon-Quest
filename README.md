@@ -15,3 +15,10 @@ Try to obtain the fastest time for each difficulty mode.
 
 
 The Driver Class for this program is "Game.java"
+
+
+# Preview of main menu and instructions
+![DungeonQuestionPreviewOfMainMenuAndInstructions](https://user-images.githubusercontent.com/32133198/189506834-d0833dd6-8d3b-401c-9265-a12b50300959.jpg)
+
+
+# Preview of Gameplay
