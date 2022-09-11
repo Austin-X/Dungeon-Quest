@@ -22,3 +22,4 @@ The Driver Class for this program is "Game.java"
 
 
 # Preview of Gameplay
+![image](https://user-images.githubusercontent.com/32133198/189507176-1b468328-0c69-40c7-a044-230f2bd46cb2.png)
