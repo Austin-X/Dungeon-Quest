@@ -12,3 +12,6 @@ There are further instructions about the game in the instructions menu of the ga
 There are 3 different difficulty modes that you can play this game in, which are: Easy, Medium, and Hard.
 If you have successfully reached the finish of this randomly generated maze, the time that it took to complete it will be displayed.
 Try to obtain the fastest time for each difficulty mode.
+
+
+The Driver Class for this program is "Game.java"
