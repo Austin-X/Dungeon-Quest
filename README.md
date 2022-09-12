@@ -3,7 +3,7 @@ Author: Austin Xu
 
 This repository stores the code for my video game called "Dungeon Quest."
 
-In this video game, your goal is to escape a randomly generated maze with mobs such as spiders, spikes, and peashooters trying to hunt you down.
+In this video game, your goal is to escape a randomly generated maze while mobs such as spiders, spikes, and peashooters try to hunt you down.
 
 The Driver Class for this program is "Game.java"
 
