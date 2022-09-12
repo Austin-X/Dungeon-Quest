@@ -4,9 +4,6 @@ Author: Austin Xu
 This repository stores the code for my video game called "Dungeon Quest."
 
 In this video game, your goal is to escape a randomly generated maze with mobs such as spiders, spikes, and peashooters trying to hunt you down.
-The game instructions are accessed by pressing the "INSTRUCTIONS" button from the main menu.
-There are 3 different difficulty modes that you can choose to play this game in, which are: Easy, Medium, and Hard.
-If you have successfully completed this randomly generated maze, the time that it took you to complete it will be displayed.
 
 The Driver Class for this program is "Game.java"
 
