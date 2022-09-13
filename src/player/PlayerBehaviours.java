@@ -16,7 +16,7 @@ public class PlayerBehaviours extends PlayerFrame implements KeyListener {
 	
 	// Declaration of constant variables that control the player's properties
 	private final static int PLAYERSIZE = 50;
-	private final static int PLAYER_VELOCITY = 3;
+	private final static int PLAYER_VELOCITY = 1;
 
 	// This image will be used as the player's character throughout the maze
 	BufferedImage hero;
