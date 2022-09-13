@@ -5,6 +5,7 @@ This repository stores the code for my video game called "Dungeon Quest."
 
 In this video game, your goal is to escape a randomly generated maze while mobs such as spiders, spikes, and peashooters try to hunt you down.
 
+Open this project using an IDE like IntelliJ.
 The Driver Class for this program is "Game.java"
 
 
