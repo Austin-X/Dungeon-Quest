@@ -1,0 +1,131 @@
+!SESSION 2023-02-02 14:20:29.234 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_162
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2023-02-02 14:20:38.110
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-02 14:20:38.110
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b03c35c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a05ff8e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.buildship.core 2 0 2023-02-02 14:20:55.499
+!MESSAGE Could not load Gradle version information
+!STACK 0
+org.gradle.api.UncheckedIOException: Cannot download published Gradle versions.
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:165)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:149)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:109)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:60)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:263)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:162)
+	... 4 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 17 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
+	... 23 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-02 14:20:55.721
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\XUA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.intro 4 0 2023-02-02 14:22:31.098
+!MESSAGE An RSS feed "http://www.eclipse.org/home/eclipsenews.rss" is malformed. News from this site is temporarily unavailable.
+
+!ENTRY org.eclipse.ui.ide 4 0 2023-02-02 14:24:12.939
+!MESSAGE Could not import project located at C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-02-02 14:24:55.342
+!MESSAGE file:///C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest\Dungeon Quest: not found.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: file:///C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest\Dungeon Quest: not found.
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:128)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:375)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest\Dungeon Quest: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:114)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:84)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:551)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:156)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-02-02 14:25:26.367
+!MESSAGE file:///C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest\Dungeon Quest: not found.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: file:///C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest\Dungeon Quest: not found.
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:128)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:375)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///C:\Users\XUA\OneDrive - Ontario Power Generation\GitHub\Dungeon-Quest\Dungeon Quest: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:114)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:84)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:551)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:156)
+	... 4 more
