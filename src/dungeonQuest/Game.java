@@ -99,7 +99,7 @@ public class Game {
     
     /**
      * Occurs when the user has died or finished the maze 
-     * pre: nonw
+     * pre: none
      * post: sets the maze invisible, sets the main menu screen visible, calculates the amount of time the user took to finish, and plays the main menu music
      */
     public static void userHasFinishedMaze() {
